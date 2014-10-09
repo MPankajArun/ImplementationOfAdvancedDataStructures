@@ -21,7 +21,7 @@ public class LinkedListPolynomial {
 	static final int noOfDigit=(int) Math.log10(nBase);
 
 	static String m="4";
-	static int n=10000000;
+	static int n=1000;
 	
 	/**
 	 * 
