@@ -1,0 +1,46 @@
+
+CS 6301.014 Implementation of advanced Data Structures and Algorithms
+Fall 2013
+Project 7
+Oct 25, 2013
+
+Version 1.0.
+
+Due: 2 AM, Monday, November 18 on elearning
+
+
+Part 1 of this project is required.  Part 2 is optional.
+
+Part 1:
+Implement the algorithm to find a maximum matching in a given bipartite graph
+G=(X,Y,E).  All work you do for this project must be your own, except for
+any code that you get for BFS.
+
+Input:
+First line of input has 3 numbers: n1 n2 m, where there are n1 vertices
+on one side of the graph (X) and n2 vertices on the other side (Y).  The
+graph has m edges.  The next m lines of input have 3 numbers each: u v w,
+indicating an edge (u,v) of weight w, where u is in X and v is in Y. 
+For part 1, ignore the weights.  Your program should output the size of
+a maximum cardinality matching, and in the next line, output such a matching.
+
+
+Part 2:
+Implement maximum weight matching.  In this version, if there is no edge
+from u in X to v in Y, add a edge of weight 0 to G, from u to v.
+When printing the matching, you can skip the 0-weight edges in it.
+
+Sample input:
+2 2 3
+1 1 2
+1 2 6
+2 2 1
+
+Output:
+Part 1:
+2
+(1,1), (2,2)
+
+Part 2:
+6
+(1,2)

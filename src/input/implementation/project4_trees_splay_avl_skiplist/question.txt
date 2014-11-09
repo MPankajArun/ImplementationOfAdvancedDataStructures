@@ -1,0 +1,74 @@
+
+CS 6301.014 Implementation of advanced Data Structures and Algorithms
+Fall 2013
+Project 4
+Sep 23, 2013
+
+Version 1.0: description of problem.
+
+Due: 2 AM, Monday, October 14 on elearning
+
+
+1. The dictionary ADT is defined on a set of (key,value) pairs, where the
+   keys are totally ordered.  The following operations are defined:
+
+   a. Insert(k,v): insert a new entry with key k, value v.  If a key with
+                   key k already exists, its value is replaced by v.
+
+   b. Find(k): return the value associated with key k.  If there is
+               no element with key k, it returns null (or 0).
+
+   c. FindMin(): return (k,v) corresponding to the current smallest key
+
+   d. FindMax(): return (k,v) corresponding to the current largest key
+
+   e. Remove(k): remove element with key k.  Returns value of deleted
+                 element (null or 0 if such a key does not exist).
+
+   f. RemoveValue(v): remove all elements whose value is v.  Returns
+                      number of elements deleted.
+
+   g. Size(): return the number of elements currently stored.
+
+   h. IsEmpty(): boolean indicating whether the current store is empty.
+
+Implement the ADT using (a) Skip lists, (b) Splay trees,
+(c) AVL or Red-Black trees and any other data structure that you think
+is best suited for the problem, and compare their performances empirically,
+by comparing their running times over a large number of operations.
+Recommend the best implementation from your experiments.
+You may download any implementations of these data structures from
+the web and modify the code as needed.
+
+
+Input specification:
+Keys and values are long integers.  Start from a tree that is initially
+empty.  The input contains a sequence of lines (use test sets with
+millions of lines).  Each line contains one operation followed by
+parameters needed for that operation, separated by spaces.  The output
+is a single number, which is the sum of the following values obtained
+by the algorithm as it processes the input:
+(a) values of elements returned by calls to FindMin and FindMax,
+(b) return values of calls to RemoveValue and Size.
+
+Sample input:
+Insert 22 47
+Insert 12 96
+Insert 37 47
+FindMin
+FindMax
+Size
+RemoveValue 47
+
+Sample output:
+148
+
+
+
+Optional projects:
+
+2. Compare algorithms for the kth largest element empirically:
+   (a) internal algorithm, (b) external algorithm.
+
+3. Implement external versions of the dictionary ADT using
+   (a) B-trees, (b) Skip lists and compare their performances.

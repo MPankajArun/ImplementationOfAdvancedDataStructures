@@ -1,0 +1,49 @@
+
+CS 6301.014 Implementation of advanced Data Structures and Algorithms
+Fall 2013
+Project 6 (optional)
+Oct 21, 2013
+
+Due: 2 AM, Monday, November 11 on elearning
+
+This is an optional project.
+
+Compare the performance of the following minimum spanning tree algorithms:
+
+1. Prim's algorithm (implementation 1 - see lecture notes)
+2. Prim's algorithm (implementation 2)
+3. Kruskal's algorithm
+4. MST algorithm in directed graphs
+
+Test your algorithms on graphs with up to 1,000,000 edges.
+
+Input: First line of input has 2 integers, N and M (|V| and |E|).
+The next M lines of input have 3 integers in each line: u,v,w
+indicating edge (u,v) of weight w.  Assume that all weights are
+nonnegative integers.  If the algorithm needs a source node, use
+vertex 1 as the source.
+
+Sample input:
+5 6
+1 2 3
+1 4 5
+4 5 9
+1 5 6
+2 5 7
+2 3 5
+
+Output:
+19
+
+Sample input for directed graph:
+5 7
+1 5 8
+1 4 7
+1 3 6
+4 3 3
+3 5 6
+5 3 2
+5 2 1
+
+Output:
+17
