@@ -66,13 +66,12 @@ public class CommonAncestorWithVisited {
 				if((tNode2.parent!=null)&&(tNode2.parent.visited==true))
 				{
 					System.out.println("Test2");
-
 					return tNode2.parent;
 				}	
 				if(tNode1.parent!=null)
-				tNode1=tNode1.parent;
+					tNode1=tNode1.parent;
 				if(tNode2.parent!=null)
-				tNode2=tNode2.parent;
+					tNode2=tNode2.parent;
 			}
 		}
 		return null;
